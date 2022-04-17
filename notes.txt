@@ -1,4 +1,6 @@
-<!-- HTML
+HTML
+    comments in html are in <!-- -->
+
 class attribute
     This attribute is given the name of the class that is defined 
     either in the same HTML document itself using the <style></style>
@@ -29,23 +31,23 @@ id attribute
     attribute of the <a></a> is assigned the name of the destination.
 
 
--->
-
-<!--CSS
+CSS
     comments in CSS are in /* */
 
 @media rule
     This rule was introduced to define different styles for different
     media types. You can set one for printers, one for computer screens,
     and one for handheld devices. 
+
     The media query is written as: 
     @media not|only mediatype and (expressions) {
     CSS-Code;
     This applies the corresponding style sheet or rules if the query returns
     true given the expressions. The 'not' and 'only' operators are optional
-    if using the 'all' media type. Other media types are:
+    if using the 'all' media type.
+    
+    Other media types are:
     print - for printers
     screen - computer screens, tablets, smartphones, etc.
     speech -  for screenreaders that "read out loud"
 }
--->

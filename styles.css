@@ -8,19 +8,20 @@
 
 .navbar{
     background: #131313;
-    height: 500px;          /**/
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 999; /* Ensure that navbar is always on top of all page content*/
 }
 
 .navbar_container{
+    background: #4837ff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -31,21 +32,19 @@
     padding: 0 50px;
 }
 
-/* logo disappears after the following segment of code. Why? */
 #navbar__logo{
-    background-color: #ff8177;
+    background-color: #fff;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    display: flex; /*using this causes the logo to dissapear. Why?*/ 
-    /* using display: flexbox; solves the issue partly, the logo remains above the links*/
+    /*display: flex; this cause the logo to dissapear?*/ 
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 
@@ -66,11 +65,13 @@
 
 .navbar__links{
     color: #fff;
+    background: #131313;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 2rem 2rem;
     height: 100%;
 }
 
@@ -98,6 +99,26 @@
     color: #fff;
 }
 
+.foodItem{
+    background-color: #645353;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    margin: 2rem 0;
+    border-radius: 50px;
+}
+
+.foodDescription{
+    color: #fff;
+    display: flex;
+}
+
+.foodPicture{
+    width: 10%;
+    height: 100%;
+}
 /* adds hover effect to "Online Order" button*/
 .button:hover{
     -webkit-text-fill-color: #131313;
@@ -128,14 +149,14 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
-        opacity: 10;
+        top: -1000px;       /*set so that the navbar isn't seen until called*/
+        opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
     }
 
-    .navbar__menu.active{
+    .navbar__menu.active{       /*javascript triggers this*/
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -166,5 +187,12 @@
         padding: 2rem;
         width: 100%;
         display: table;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
     }
 }
