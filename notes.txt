@@ -50,4 +50,10 @@ CSS
     print - for printers
     screen - computer screens, tablets, smartphones, etc.
     speech -  for screenreaders that "read out loud"
+
+margin, border, and padding
+    visually the order of these attributes starting from the outside and moving
+    your way inwards to the content is:
+    margin, border, padding, content
+    
 }

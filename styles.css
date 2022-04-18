@@ -3,16 +3,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-
 }
 
 .navbar{
-    background: #131313;
-    height: 100%;
+    background: black;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: sticky;
     top: 0px;
     z-index: 999; /* Ensure that navbar is always on top of all page content*/
@@ -22,34 +21,17 @@
     background: #4837ff;
     display: flex;
     justify-content: center;
-    height: 80px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     /* 0 0 0 0 top bottom left right respectively
         or 2 values 0 0, top & bottom left & right */
     padding: 0 50px;
 }
 
-#navbar__logo{
-    background-color: #fff;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    /*display: flex; this cause the logo to dissapear?*/ 
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-
-.fa-gem{
-    margin-right: 0.5rem;
+.navbar__logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
 }
 
 .navbar__menu{
@@ -60,7 +42,7 @@
 }
 
 .navbar__item{
-    height: 80px;
+    height: 60px;
 }
 
 .navbar__links{
@@ -99,26 +81,69 @@
     color: #fff;
 }
 
+.foodItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
 .foodItem{
-    background-color: #645353;
+    background: black;
+    background-image: linear-gradient(to right, black 20%, white 120%);
     display: flex;
     justify-content: left;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    margin: 2rem 0;
-    border-radius: 50px;
+    width: 40%;
+    height: 180px;
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+.foodItem:hover{
+    background: #f77062;
+    transition: all 0.5s ease;
+}
+.foodHeader{
+    color: #fff;
+    font-family: "Cutive", sans-serif;
+    font-size: 1rem;
 }
 
 .foodDescription{
     color: #fff;
-    display: flex;
+    font-family: "Cutive", sans-serif;
+    line-height: 1.5rem;
+    padding: 1rem;
+    
 }
 
 .foodPicture{
-    width: 10%;
-    height: 100%;
+    width: 200px;
+    height: auto;
 }
+
+.about{
+    background-image: linear-gradient(to bottom, grey 30%, white 100%);
+    margin: 2rem;
+    padding: 3rem;
+    border: black;
+    border-width: 1rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    font-family: "Cutive", sans-serif;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.about h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1rem;
+}
+
 /* adds hover effect to "Online Order" button*/
 .button:hover{
     -webkit-text-fill-color: #131313;
@@ -132,6 +157,15 @@
     transition: all 0.3s ease;
 }
 
+.mainFooter{
+    margin-top: 1rem;
+    background: #131313;
+    height: 50px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+/*
 @media screen and (max-width: 960px){
     .navbar__container{
         display: flex;
@@ -149,14 +183,14 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;       /*set so that the navbar isn't seen until called*/
+        top: -1000px;       /*set so that the navbar isn't seen until called
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
     }
 
-    .navbar__menu.active{       /*javascript triggers this*/
+    .navbar__menu.active{       /*javascript triggers this
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -166,16 +200,8 @@
         font-size: 1.6rem;
     }
 
-    #navbar__logo{
-        padding-left: 25px;
-    }
-
-    .navbar__toggle.bar{
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
+    .navbar__logo{
+        padding-left: 0px;
     }
 
     .navbar__item{
@@ -194,5 +220,5 @@
         top: 20%;
         right: 5%;
         transform: translate(5%,20%);
-    }
-}
+    } 
+}*/
