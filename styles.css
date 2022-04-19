@@ -175,7 +175,7 @@
     text-align: center;
 }
 
-/*
+
 @media screen and (max-width: 960px){
     .navbar__container{
         display: flex;
@@ -193,14 +193,14 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;       /*set so that the navbar isn't seen until called
+        top: -1000px;       /*set so that the navbar isn't seen until called*/
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
     }
 
-    .navbar__menu.active{       /*javascript triggers this
+    .navbar__menu.active{       /*javascript triggers this*/
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -231,4 +231,4 @@
         right: 5%;
         transform: translate(5%,20%);
     } 
-}*/
+}
