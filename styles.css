@@ -1,3 +1,4 @@
+/*Global Styling*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+/*Styles for All Navbar Elements*/
 .navbar{
     background: black;
     height: 100px;
@@ -79,10 +81,23 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: red;
     color: #fff;
 }
 
+/* adds hover effect to "Online Order" button*/
+.button:hover{
+    -webkit-text-fill-color: #131313;
+    background: #4837ff;
+    transition: all 0.5s ease;
+}
+/* adds hover effect to links*/
+.navbar__links:hover{
+    color: red;
+    transition: all 0.3s ease;
+}
+
+/* Styles For About The Business Section*/
 .about{
     background-image: linear-gradient(to bottom, grey 30%, white 100%);
     margin: 2rem;
@@ -99,7 +114,7 @@
 }
 
 .about p{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-family: "Cutive", sans-serif;
     line-height: 2rem;
     text-align: center;
@@ -107,7 +122,7 @@
 }
 
 .about h1{
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: sans-serif;
     text-align: center;
     margin-bottom: 2rem;
@@ -115,6 +130,7 @@
     display: flex;
 }
 
+/*Styles For Items Offerred & Descriptions*/
 .foodItems{
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +156,7 @@
 }
 
 .foodItem:hover{
-    background: #f77062;
+    background: red;
     transition: all 0.5s ease;
 }
 
@@ -155,7 +171,7 @@
     font-family: "Cutive", sans-serif;
     line-height: 1.5rem;
     padding: 1rem;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .foodPicture{
@@ -163,29 +179,24 @@
     height: auto;
 }
 
-/* adds hover effect to "Online Order" button*/
-.button:hover{
-    -webkit-text-fill-color: #131313;
-    background: #4837ff;
-    transition: all 0.5s ease;
-}
-
-/* adds hover effect to links*/
-.navbar__links:hover{
-    color: #f77062;
-    transition: all 0.3s ease;
-}
-
 .mainFooter{
-    margin-top: 1rem;
+    margin-top: 2rem;
     background: #131313;
     height: 50px;
     font-size: 1rem;
     color: white;
     text-align: center;
+    padding-top: 1rem;
 }
 
-@media only screen and (max-device-width: 480px){ /*960*/
+/*Google Maps*/
+#map{
+    height: 400px;
+    width: 100%;
+}
+
+/*
+@media only screen and (max-device-width: 480px){ /*960
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -202,14 +213,14 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;       /*set so that the navbar isn't seen until called*/
+        top: -1000px;       /*set so that the navbar isn't seen until called
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
     }
 
-    .navbar__menu.active{       /*javascript triggers this*/
+    .navbar__menu.active{       /*javascript triggers this
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -240,4 +251,4 @@
         right: 5%;
         transform: translate(5%,20%);
     } 
-}
+}*/
