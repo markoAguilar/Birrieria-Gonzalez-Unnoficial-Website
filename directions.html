@@ -1,14 +1,36 @@
-<html>
-    <head>
-        <title>Directions</title>
-        <script src="https://plyfill.io/v3/polyfill.min.js?features=default"></script>
-        <link rel="stylesheet" type="text/css" href="./styles.css"/>
-        <script type="module" src="./app.js"></script>
-    </head>
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Directions</title>
+    <!-- <script src="https://plyfill.io/v3/polyfill.min.js?features=default"></script> -->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
 
-    <body>
-        <h1>Directions To Birrieria Gonzalez</h1>
-        <div id="map"></div>
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgWu4dVSPZU9WFzK8rxaA7nRIZy9j0RCA&callback=initMap" defer></script>
-    </body>
+  <body>
+    <header>
+      <h1>Directions To Birrieria Gonzalez</h1>
+    </header>
+    <main>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0009050053063!2d-118.15387032361014!3d34.01818771952666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cfa5f08b21e5%3A0x6f8dd74a199a6932!2sBirrieria%20Gonzalez!5e0!3m2!1sen!2sus!4v1711330807825!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <!--
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgWu4dVSPZU9WFzK8rxaA7nRIZy9j0RCA&callback=initMap"
+      defer
+    ></script>
+    -->
+  </body>
 </html>

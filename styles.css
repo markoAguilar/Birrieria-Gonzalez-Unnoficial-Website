@@ -1,198 +1,197 @@
 /*Global Styling*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 /*Styles for All Navbar Elements*/
-.navbar{
-    background: black;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    position: sticky;
-    top: 0px;
-    z-index: 999; /* Ensure that navbar is always on top of all page content*/
-    width: 100%;
+.navbar {
+  background: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+  z-index: 999; /* Ensure that navbar is always on top of all page content*/
+  position: sticky; /*Ensures that navbar stays at the top of the page when scrolling*/
+  width: 100%;
 }
 
-.navbar_container{
-    background: #4837ff;
-    display: flex;
-    justify-content: space-around;
-    z-index: 1;
-    margin: 0 auto;
-    width: 100%;
-    /* 0 0 0 0 top bottom left right respectively
+.navbar_container {
+  background: #4837ff;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%;
+  /* 0 0 0 0 top bottom left right respectively
         or 2 values 0 0, top & bottom left & right */
-    padding: 0 50px;
+  padding: 0 50px;
 }
 
-.navbar__logo{
-    width: 100px;
-    height: 100px;
-    display: flex;
+.navbar__logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
 }
 
-.navbar__menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
 }
 
-.navbar__item{
-    height: 60px;
+.navbar__item {
+  height: 60px;
 }
 
-.navbar__links{
-    color: #fff;
-    background: #131313;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 2rem 2rem;
-    height: 100%;
+.navbar__links {
+  color: #fff;
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 2rem 2rem;
+  height: 100%;
 }
 
-.navbar__btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    height: 100%;
+.navbar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  height: 100%;
 }
 
 /*Online Order button*/
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: red;
-    color: #fff;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: red;
+  color: #fff;
 }
 
 /* adds hover effect to "Online Order" button*/
-.button:hover{
-    -webkit-text-fill-color: #131313;
-    background: #4837ff;
-    transition: all 0.5s ease;
+.button:hover {
+  -webkit-text-fill-color: #131313;
+  background: #4837ff;
+  transition: all 0.5s ease;
 }
 /* adds hover effect to links*/
-.navbar__links:hover{
-    color: red;
-    transition: all 0.3s ease;
+.navbar__links:hover {
+  color: red;
+  transition: all 0.3s ease;
 }
 
 /* Styles For About The Business Section*/
-.about{
-    background-image: linear-gradient(to bottom, grey 30%, white 100%);
-    margin: 2rem;
-    padding: 3rem;
-    border: black;
-    border-width: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about {
+  background-image: linear-gradient(to bottom, grey 30%, white 100%);
+  margin: 2rem;
+  padding: 3rem;
+  border: black;
+  border-width: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about:nth-of-type(1){
-    align-self: center;
+.about:nth-of-type(1) {
+  align-self: center;
 }
 
-.about p{
-    font-size: 1.5rem;
-    font-family: "Cutive", sans-serif;
-    line-height: 2rem;
-    text-align: center;
-    display: flex;
+.about p {
+  font-size: 1.5rem;
+  font-family: "Cutive", sans-serif;
+  line-height: 2rem;
+  text-align: center;
+  display: flex;
 }
 
-.about h1{
-    font-size: 3rem;
-    font-family: sans-serif;
-    text-align: center;
-    margin-bottom: 2rem;
-    letter-spacing: 1rem;
-    display: flex;
+.about h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1rem;
+  display: flex;
 }
 
 /*Styles For Items Offerred & Descriptions*/
-.foodItems{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
+.foodItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
 }
 
-.foodItems:nth-of-type(5){
-    align-self: center;
+.foodItems:nth-of-type(5) {
+  align-self: center;
 }
 
-.foodItem{
-    background: black;
-    background-image: linear-gradient(to right, black 20%, white 120%);
-    display: flex;
-    justify-content: left;
-    width: 40%;
-    height: 180px;
-    margin-bottom: 1rem;
-    border-style: solid;
-    border-color: grey;
-    border-width: .5px;
+.foodItem {
+  background: black;
+  background-image: linear-gradient(to right, black 20%, white 120%);
+  display: flex;
+  justify-content: left;
+  width: 40%;
+  height: 180px;
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-color: grey;
+  border-width: 0.5px;
 }
 
-.foodItem:hover{
-    background: red;
-    transition: all 0.5s ease;
+.foodItem:hover {
+  background: red;
+  transition: all 0.5s ease;
 }
 
-.foodHeader{
-    color: #fff;
-    font-family: "Cutive", sans-serif;
-    font-size: 1rem;
+.foodHeader {
+  color: #fff;
+  font-family: "Cutive", sans-serif;
+  font-size: 1rem;
 }
 
-.foodDescription{
-    color: #fff;
-    font-family: "Cutive", sans-serif;
-    line-height: 1.5rem;
-    padding: 1rem;
-    font-size: 1rem;
+.foodDescription {
+  color: #fff;
+  font-family: "Cutive", sans-serif;
+  line-height: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
-.foodPicture{
-    width: 200px;
-    height: auto;
+.foodPicture {
+  width: 200px;
+  height: auto;
 }
 
-.mainFooter{
-    margin-top: 2rem;
-    background: #131313;
-    height: 50px;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    padding-top: 1rem;
+.mainFooter {
+  margin-top: 2rem;
+  background: #131313;
+  height: 50px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /*Google Maps*/
-#map{
-    height: 400px;
-    width: 100%;
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 /*
