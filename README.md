@@ -1,6 +1,6 @@
 # Birrieria-Gonzalez-Unnoficial-Website
 Unnoficial website for one of my favorite local  restaurant businesses called Birrieria Gonzalez.
 
-<!img src="images/mainpage.png" height="300px">
+<img src="images/mainpage.png" height="300px">
 
 ...work in progress
