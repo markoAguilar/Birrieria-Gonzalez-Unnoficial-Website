@@ -7,12 +7,14 @@
   </head>
 
   <body>
+    <!-- HEADER: Navbar -->
     <header>
       <nav class="navbar">
         <!--Navbar Logo-->
-        <div class="navbar__logo">
+        <a href="index.html" class="navbar__logolink">
           <img src="images/logo.jpeg" />
-        </div>
+        </a>
+
         <div class="navbar__container">
           <!--Navbar Menu-->
           <ul class="navbar__menu">
@@ -28,7 +30,7 @@
             <!--class attribue of the <li> and <a> tags are
                     changed to denote a button-->
             <li class="navbar__btn">
-              <a href="onlineOrder.html" class="button">
+              <a href="onlineOrder.html" class="order__button">
                 <!--HTML BUTTON-->
                 Online Order
               </a>
@@ -38,7 +40,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-page">
       <div class="foodItems">
         <div class="foodItem">
           <img src="images/tacos.jpeg" class="foodPicture" />

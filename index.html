@@ -18,9 +18,10 @@
     <header>
       <nav class="navbar">
         <!--Navbar Logo-->
-        <div class="navbar__logo">
+        <a href="index.html" class="navbar__logolink">
           <img src="images/logo.jpeg" />
-        </div>
+        </a>
+
         <div class="navbar__container">
           <!--Navbar Menu-->
           <ul class="navbar__menu">
@@ -36,7 +37,7 @@
             <!--class attribue of the <li> and <a> tags are
                     changed to denote a button-->
             <li class="navbar__btn">
-              <a href="onlineOrder.html" class="button">
+              <a href="onlineOrder.html" class="order__button">
                 <!--HTML BUTTON-->
                 Online Order
               </a>
@@ -47,19 +48,118 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-      <div class="about">
-        <h1>BIRRIERIA GONZALEZ</h1>
-        <p>
-          Serving the greater Los Angeles area for over 20 years! We take pride
-          in our mouth-watering Birria dishes made from 100% beef. Join us for
-          lunch or dinner and place your order at one of your nearby locations
-          or place an online order with Postmates or Doordash! We can't wait for
-          you to experience the traditional Mexican food that is making locals
-          come back for more!
-        </p>
+    <main class="main-page">
+      <!-- About Section-->
+      <div class="about__container">
+        <div class="about">
+          <h1>BIRRIERIA GONZALEZ</h1>
+          <!--Main Picture -->
+          <div class="mainPicContainer">
+            <img src="images/bGOutside.jpg" id="mainPic" />
+          </div>
+          <p>
+            Serving the greater Los Angeles area for over 20 years! We take
+            pride in our mouth-watering Birria made from 100% beef. Place your
+            order by calling one of your nearby locations or place an online
+            order with Postmates or Doordash! We can't wait to serve you!
+          </p>
+        </div>
       </div>
+
+      <!--YELP REVIEWS-->
+      <section class="reviews__container">
+        <!--Review 1-->
+        <span
+          class="yelp-review"
+          data-review-id="TG_SSF1QNnDWcRnPcFPjZQ"
+          data-hostname="www.yelp.com"
+          >Read
+          <a
+            href="https://www.yelp.com/user_details?userid=3EvkKbNRZn6j5lNESeJzlw"
+            rel="nofollow noopener"
+            >Patty M.</a
+          >'s
+          <a
+            href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=TG_SSF1QNnDWcRnPcFPjZQ"
+            rel="nofollow noopener"
+            >review</a
+          >
+          of
+          <a
+            href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
+            rel="nofollow noopener"
+            >Birrieria Gonzalez</a
+          >
+          on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+          <script
+            src="https://www.yelp.com/embed/widgets.js"
+            type="text/javascript"
+            async
+          ></script
+        ></span>
+
+        <!--Review 2-->
+        <span
+          class="yelp-review"
+          data-review-id="AprPLBtWZzvJbYk2F9QGJA"
+          data-hostname="www.yelp.com"
+          >Read
+          <a
+            href="https://www.yelp.com/user_details?userid=tXKNXaWnrjXa9i9TytDoeQ"
+            rel="nofollow noopener"
+            >Josselyn C.</a
+          >'s
+          <a
+            href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=AprPLBtWZzvJbYk2F9QGJA"
+            rel="nofollow noopener"
+            >review</a
+          >
+          of
+          <a
+            href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
+            rel="nofollow noopener"
+            >Birrieria Gonzalez</a
+          >
+          on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+          <script
+            src="https://www.yelp.com/embed/widgets.js"
+            type="text/javascript"
+            async
+          ></script
+        ></span>
+        <!--Review 3-->
+        <span
+          class="yelp-review"
+          data-review-id="-Uycov4Teb9jdhOb2YBLDw"
+          data-hostname="www.yelp.com"
+          >Read
+          <a
+            href="https://www.yelp.com/user_details?userid=fArrTGoogVHaSAJLG1Rggg"
+            rel="nofollow noopener"
+            >Helga W.</a
+          >'s
+          <a
+            href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=-Uycov4Teb9jdhOb2YBLDw"
+            rel="nofollow noopener"
+            >review</a
+          >
+          of
+          <a
+            href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
+            rel="nofollow noopener"
+            >Birrieria Gonzalez</a
+          >
+          on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+          <script
+            src="https://www.yelp.com/embed/widgets.js"
+            type="text/javascript"
+            async
+          ></script
+        ></span>
+      </section>
     </main>
+
+    <!--Footer -->
     <footer class="mainFooter">
       Unofficial Website of Birrieria Gonzalez Restaurant.
     </footer>

@@ -6,77 +6,61 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
-/*Styles for All Navbar Elements*/
 .navbar {
-  background: black;
   height: 100px;
+  width: 100%;
+  background: black;
+  justify-content: center; /*Elements in container are centered to the middle, vertically about the vertical axis*/
+  align-items: center; /* Elements are aligned horizontally on the horizontal axis of the navbar container*/
   display: flex;
-  justify-content: center;
   font-size: 1.5rem;
-  align-items: center;
   z-index: 999; /* Ensure that navbar is always on top of all page content*/
   position: sticky; /*Ensures that navbar stays at the top of the page when scrolling*/
-  width: 100%;
 }
 
 .navbar_container {
-  background: #4837ff;
   display: flex;
-  justify-content: space-around;
-  z-index: 1;
-  margin: 0 auto;
+  background: #4837ff;
   width: 100%;
-  /* 0 0 0 0 top bottom left right respectively
-        or 2 values 0 0, top & bottom left & right */
-  padding: 0 50px;
+  height: 100px;
 }
 
-.navbar__logo {
+.navbar__logolink {
+  display: flex; /* enables a link to have a with and height*/
+  justify-content: center;
   width: 100px;
   height: 100px;
-  display: flex;
 }
 
 .navbar__menu {
-  display: flex;
+  display: flex; /* enables alignment of navbar menu-items*/
   align-items: center;
   list-style: none;
-  text-align: center;
 }
 
 .navbar__item {
-  height: 60px;
+  display: flex;
 }
 
 .navbar__links {
   color: #fff;
   background: #131313;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  text-decoration: none; /*removes link underlining*/
   padding: 2rem 2rem;
-  height: 100%;
 }
 
 .navbar__btn {
-  display: flex;
   align-items: center;
-  justify-content: center;
   padding: 0 1rem;
-  height: 100%;
 }
 
 /*Online Order button*/
-.button {
+.order__button {
   display: flex;
   align-items: center;
-  justify-content: center;
   text-decoration: none;
   padding: 10px 20px;
-  height: 100%;
-  width: 100%;
   border: none;
   outline: none;
   border-radius: 4px;
@@ -96,16 +80,53 @@
   transition: all 0.3s ease;
 }
 
+.main-page {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #661201 50%, black 100%);
+  align-items: center;
+  height: 100%;
+}
+
+.main-page h1 {
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1rem;
+  display: flex;
+  color: white;
+}
+
+/*Main page image*/
+.mainPicContainer {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+}
+
+#mainPic {
+  width: 1000px;
+}
 /* Styles For About The Business Section*/
+.about__container {
+  display: flex;
+  justify-content: center;
+}
+
 .about {
-  background-image: linear-gradient(to bottom, grey 30%, white 100%);
+  background-image: linear-gradient(to bottom, #661201 10%, black 100%);
   margin: 2rem;
   padding: 3rem;
   border: black;
-  border-width: 1rem;
+  border-width: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* each element will now be stacked vertically */
   align-items: center;
+  width: 1000px;
 }
 
 .about:nth-of-type(1) {
@@ -118,6 +139,9 @@
   line-height: 2rem;
   text-align: center;
   display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
 }
 
 .about h1 {
@@ -129,12 +153,20 @@
   display: flex;
 }
 
-/*Styles For Items Offerred & Descriptions*/
+/*REVIEWS*/
+.reviews__container {
+  background-image: linear-gradient(to bottom, #661201 10%, black 100%);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
+  width: 1000px;
+}
+/*Styles For Online Order Page
+ * Items Offerred & Descriptions*/
 .foodItems {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-around;
 }
 
 .foodItems:nth-of-type(5) {
@@ -145,7 +177,6 @@
   background: black;
   background-image: linear-gradient(to right, black 20%, white 120%);
   display: flex;
-  justify-content: left;
   width: 40%;
   height: 180px;
   margin-bottom: 1rem;
@@ -179,9 +210,9 @@
 }
 
 .mainFooter {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   background: #131313;
-  height: 50px;
+  height: 100px;
   font-size: 1rem;
   color: white;
   text-align: center;
@@ -189,65 +220,79 @@
 }
 
 /*Google Maps*/
-#map {
-  height: 400px;
+iframe {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.map {
+  display: flex;
+  min-height: 100%;
   width: 100%;
 }
 
 /*
-@media only screen and (max-device-width: 480px){ /*960
-    .navbar__container{
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
+@media only screen and (max-device-width: 480px) {
+  960 .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
 
-    .navbar__menu{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;       /*set so that the navbar isn't seen until called
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-    }
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px; /*set so that the navbar isn't seen until called
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+  }
 
-    .navbar__menu.active{       /*javascript triggers this
-        background: #131313;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
-    }
+  /*
+  .navbar__menu.active {
+    /*javascript triggers this
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
 
-    .navbar__logo{
-        padding-left: 0px;
-    }
+  .navbar__logo {
+    padding-left: 0px;
+  }
 
-    .navbar__item{
-        width: 100%;
-    }
+  .navbar__item {
+    width: 100%;
+  }
 
-    .navbar__links{
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
 
-    #mobile-menu{
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%,20%);
-    } 
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
 }*/

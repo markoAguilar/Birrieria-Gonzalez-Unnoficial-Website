@@ -3,34 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <title>Directions</title>
-    <!-- <script src="https://plyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <script type="module" src="./app.js"></script>
   </head>
 
   <body>
+    <!-- Navbar -->
     <header>
-      <h1>Directions To Birrieria Gonzalez</h1>
+      <nav class="navbar">
+        <!--Navbar Logo-->
+        <a href="index.html" class="navbar__logolink">
+          <img src="images/logo.jpeg" />
+        </a>
+
+        <div class="navbar__container">
+          <!--Navbar Menu-->
+          <ul class="navbar__menu">
+            <!--Navbar Menu Items-->
+            <li class="navbar__item">
+              <a href="directions.html" class="navbar__links"> Directions </a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="" class="navbar__links"> About Us </a>
+            </li>
+
+            <!--class attribue of the <li> and <a> tags are
+                    changed to denote a button-->
+            <li class="navbar__btn">
+              <a href="onlineOrder.html" class="order__button">
+                <!--HTML BUTTON-->
+                Online Order
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <main>
-      <div id="map">
+
+    <main class="main-page">
+      <!-- put title in div or use inline css (not best practice) -->
+      <h1>Directions To Birrieria Gonzalez</h1>
+      <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0009050053063!2d-118.15387032361014!3d34.01818771952666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cfa5f08b21e5%3A0x6f8dd74a199a6932!2sBirrieria%20Gonzalez!5e0!3m2!1sen!2sus!4v1711330807825!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
+          width="100%"
+          height="100%"
           allowfullscreen=""
+          scrolling="auto"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </main>
-    <!--
-    <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgWu4dVSPZU9WFzK8rxaA7nRIZy9j0RCA&callback=initMap"
-      defer
-    ></script>
-    -->
+
+    <!--Footer -->
+    <footer class="mainFooter">
+      Unofficial Website of Birrieria Gonzalez Restaurant.
+    </footer>
   </body>
 </html>
