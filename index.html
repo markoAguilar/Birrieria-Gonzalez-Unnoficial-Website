@@ -7,48 +7,42 @@
     <title>Birrieria Gonzalez</title>
     <link rel="icon" href="images/tabLogo.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Cutive"
-    />
   </head>
 
   <body>
     <!-- Navbar -->
-    <header>
-      <nav class="navbar">
-        <!--Navbar Logo-->
-        <a href="index.html" class="navbar__logolink">
-          <img src="images/logo.jpeg" />
-        </a>
+    <header class="navbar">
+      <!--Navbar Logo-->
+      <a href="index.html" class="navbar__logolink">
+        <img src="images/logo.jpeg" />
+      </a>
 
-        <div class="navbar__container">
-          <!--Navbar Menu-->
-          <ul class="navbar__menu">
-            <!--Navbar Menu Items-->
-            <li class="navbar__item">
-              <a href="directions.html" class="navbar__links"> Directions </a>
-            </li>
+      <div class="navbar__container">
+        <!--Navbar Menu-->
+        <ul class="navbar__menu">
+          <!--Navbar Menu Items-->
+          <li class="navbar__item">
+            <a href="directions.html" class="navbar__links"> Directions </a>
+          </li>
 
-            <li class="navbar__item">
-              <a href="" class="navbar__links"> About Us </a>
-            </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__links"> About Us </a>
+          </li>
 
-            <!--class attribue of the <li> and <a> tags are
+          <!--class attribue of the <li> and <a> tags are
                     changed to denote a button-->
-            <li class="navbar__btn">
-              <a href="onlineOrder.html" class="order__button">
-                <!--HTML BUTTON-->
-                Online Order
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <li class="navbar__btn">
+            <a href="onlineOrder.html" class="order__button">
+              <!--HTML BUTTON-->
+              Online Order
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Main Content -->
-    <main class="main-page">
+    <main class="main-content">
       <!-- About Section-->
       <div class="about__container">
         <div class="about">
@@ -69,93 +63,100 @@
       <!--YELP REVIEWS-->
       <section class="reviews__container">
         <!--Review 1-->
-        <span
-          class="yelp-review"
-          data-review-id="TG_SSF1QNnDWcRnPcFPjZQ"
-          data-hostname="www.yelp.com"
-          >Read
-          <a
-            href="https://www.yelp.com/user_details?userid=3EvkKbNRZn6j5lNESeJzlw"
-            rel="nofollow noopener"
-            >Patty M.</a
-          >'s
-          <a
-            href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=TG_SSF1QNnDWcRnPcFPjZQ"
-            rel="nofollow noopener"
-            >review</a
-          >
-          of
-          <a
-            href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
-            rel="nofollow noopener"
-            >Birrieria Gonzalez</a
-          >
-          on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-          <script
-            src="https://www.yelp.com/embed/widgets.js"
-            type="text/javascript"
-            async
-          ></script
-        ></span>
+        <div class="review">
+          <span
+            class="yelp-review"
+            data-review-id="TG_SSF1QNnDWcRnPcFPjZQ"
+            data-hostname="www.yelp.com"
+            >Read
+            <a
+              href="https://www.yelp.com/user_details?userid=3EvkKbNRZn6j5lNESeJzlw"
+              rel="nofollow noopener"
+              >Patty M.</a
+            >'s
+            <a
+              href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=TG_SSF1QNnDWcRnPcFPjZQ"
+              rel="nofollow noopener"
+              >review</a
+            >
+            of
+            <a
+              href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
+              rel="nofollow noopener"
+              >Birrieria Gonzalez</a
+            >
+            on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+            <script
+              src="https://www.yelp.com/embed/widgets.js"
+              type="text/javascript"
+              async
+            ></script
+          ></span>
+        </div>
 
         <!--Review 2-->
-        <span
-          class="yelp-review"
-          data-review-id="AprPLBtWZzvJbYk2F9QGJA"
-          data-hostname="www.yelp.com"
-          >Read
-          <a
-            href="https://www.yelp.com/user_details?userid=tXKNXaWnrjXa9i9TytDoeQ"
-            rel="nofollow noopener"
-            >Josselyn C.</a
-          >'s
-          <a
-            href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=AprPLBtWZzvJbYk2F9QGJA"
-            rel="nofollow noopener"
-            >review</a
-          >
-          of
-          <a
-            href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
-            rel="nofollow noopener"
-            >Birrieria Gonzalez</a
-          >
-          on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-          <script
-            src="https://www.yelp.com/embed/widgets.js"
-            type="text/javascript"
-            async
-          ></script
-        ></span>
+        <div class="review">
+          <span
+            class="yelp-review"
+            data-review-id="AprPLBtWZzvJbYk2F9QGJA"
+            data-hostname="www.yelp.com"
+            >Read
+            <a
+              href="https://www.yelp.com/user_details?userid=tXKNXaWnrjXa9i9TytDoeQ"
+              rel="nofollow noopener"
+              >Josselyn C.</a
+            >'s
+            <a
+              href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=AprPLBtWZzvJbYk2F9QGJA"
+              rel="nofollow noopener"
+              >review</a
+            >
+            of
+            <a
+              href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
+              rel="nofollow noopener"
+              >Birrieria Gonzalez</a
+            >
+            on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+            <script
+              src="https://www.yelp.com/embed/widgets.js"
+              type="text/javascript"
+              async
+            ></script
+          ></span>
+        </div>
+
         <!--Review 3-->
-        <span
-          class="yelp-review"
-          data-review-id="-Uycov4Teb9jdhOb2YBLDw"
-          data-hostname="www.yelp.com"
-          >Read
-          <a
-            href="https://www.yelp.com/user_details?userid=fArrTGoogVHaSAJLG1Rggg"
-            rel="nofollow noopener"
-            >Helga W.</a
-          >'s
-          <a
-            href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=-Uycov4Teb9jdhOb2YBLDw"
-            rel="nofollow noopener"
-            >review</a
-          >
-          of
-          <a
-            href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
-            rel="nofollow noopener"
-            >Birrieria Gonzalez</a
-          >
-          on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-          <script
-            src="https://www.yelp.com/embed/widgets.js"
-            type="text/javascript"
-            async
-          ></script
-        ></span>
+        <div class="review">
+          <span
+            class="yelp-review"
+            data-review-id="-Uycov4Teb9jdhOb2YBLDw"
+            data-hostname="www.yelp.com"
+            >Read
+            <a
+              href="https://www.yelp.com/user_details?userid=fArrTGoogVHaSAJLG1Rggg"
+              rel="nofollow noopener"
+              >Helga W.</a
+            >'s
+            <a
+              href="https://www.yelp.com/biz/birrieria-gonzalez-east-los-angeles?hrid=-Uycov4Teb9jdhOb2YBLDw"
+              rel="nofollow noopener"
+              >review</a
+            >
+            of
+            <a
+              href="https://www.yelp.com/biz/UZ6BHa5hDB7w-N9LdIlE1Q"
+              rel="nofollow noopener"
+              >Birrieria Gonzalez</a
+            >
+            on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+            <script
+              src="https://www.yelp.com/embed/widgets.js"
+              type="text/javascript"
+              async
+            ></script
+          ></span>
+        </div>
       </section>
     </main>
 
