@@ -84,11 +84,10 @@
 .main-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-image: linear-gradient(to bottom, #661201 50%, black 100%);
   height: 100%;
-  /*why is this aligning all items horizontally rather than justify-content*/
-  align-items: center;
-  width: 100%;
+  justify-content: center;
 }
 
 .main-content h1 {
@@ -104,6 +103,7 @@
 
 /*Main page image*/
 .mainPicContainer {
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   height: 300px;
@@ -111,22 +111,29 @@
 }
 
 #mainPic {
-  width: 70%;
+  width: 100%;
 }
 /* Styles For About The Business Section*/
 .about__container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .about {
-  display: flex;
-  align-items: center;
   background-image: linear-gradient(to bottom, #661201 10%, black 100%);
-  margin-bottom: 2rem;
+  margin: 2rem;
   padding: 3rem;
+  border: black;
+  border-width: 2rem;
+  display: flex;
   flex-direction: column; /* each element will now be stacked vertically */
-  width: 75%;
+  align-items: center;
+  width: 1000px;
+}
+
+.about:nth-of-type(1) {
+  align-self: center;
 }
 
 .about p {
@@ -134,17 +141,17 @@
   font-family: "Cutive", sans-serif;
   line-height: 2rem;
   text-align: center;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
   color: white;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .about h1 {
   font-size: 3rem;
   font-family: sans-serif;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   letter-spacing: 1rem;
   display: flex;
 }
@@ -152,11 +159,13 @@
 /*REVIEWS*/
 .reviews__container {
   display: flex;
-  justify-content: space-between;
   background-image: linear-gradient(to bottom, #661201 10%, black 100%);
-  padding: 2rem;
-  width: 75%;
-  height: 250px;
+  padding: 20px;
+  width: 73%;
+}
+
+.review {
+  display: inline-block;
 }
 
 /*Styles For Online Order Page
@@ -221,7 +230,7 @@
 }
 
 /*Google Maps*/
-.ifMap {
+iframe {
   display: flex;
   height: 600px;
   width: 100%;
@@ -237,3 +246,63 @@
   min-height: 100%;
   width: 100%;
 }
+
+/*
+@media only screen and (max-device-width: 480px) {
+  960 .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px; /*set so that the navbar isn't seen until called
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+  }
+
+  /*
+  .navbar__menu.active {
+    /*javascript triggers this
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+
+  .navbar__logo {
+    padding-left: 0px;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+}*/
